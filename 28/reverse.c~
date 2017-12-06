@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void f(int n)   
+{   
+    if(n)   
+        f(n/2);   
+    else   
+        return;   
+    printf("%d\n",n%2);   
+}   
+
+int main()
+{
+	int a;
+	f(a);
+}
+

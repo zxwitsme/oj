@@ -1,0 +1,16 @@
+
+3. big number substraction
+4. hash table
+12. recursion
+16. calculation
+17. convert to chinese number
+19. big number addition
+21. stack
+22,23. arithmetic progression & geometric progression
+24. recursion
+25. knapsack problem(use dynamic programming)
+27. poker
+30. continuous multiphy
+32,33. permutation
+35: banker algorithm (avoid deadlock)
+36: dijkstra shortest path
