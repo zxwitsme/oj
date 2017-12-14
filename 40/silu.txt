@@ -1,0 +1,85 @@
+字符串的修改（动态规划-最短编辑距离）
+转载 2015年07月24日 15:01:18 1633
+1187: 字符串的修改
+Time Limit: 1 Sec  Memory Limit: 128 MB
+Submit: 6  Solved: 5
+[Submit][Status][Web Board]
+Description
+设A和B是两个字符串。我们要用最少的字符操作次数，将字符串A转换为字符串B。这里所说的字符操作共有三种： 
+
+1. 删除一个字符； 
+2. 插入一个字符； 
+3. 将一个字符改为另一个字符。 
+对任给的两个字符串A和B，计算出将字符串A变换为字符串B所用的最少字符操作次数。
+
+Input
+第一行为字符串A；第二行为字符串B；字符串A和B的长度均小于200。
+
+Output
+只有一个正整数，为最少字符操作次数。
+
+Sample Input
+sfdxbqw
+gfdgw
+
+Sample Output
+4
+HINT
+见1793，求出a和b的最长公共子序列，接下来就好办了
+
+Source
+动态规划
+
+
+
+[cpp] view plain copy
+#include<cstdio>  
+#include<cstring>  
+#include<iostream>  
+#include<algorithm>  
+using namespace std;  
+#define N 205  
+int dp[N][N];//dp[i][j]表示a的前i个和b的前j个相同后的最短距离  
+char a[N],b[N];  
+void match(char *s,char *s1,int lena,int lenb)  
+{  
+    int i,j,inserts,deletes,replaces;  
+    for(i=1;i<=lena;i++)  
+    {  
+        dp[i][0]=i;  
+    }  
+    for(j=1;j<=lenb;j++)  
+    {  
+        dp[0][j]=j;  
+    }  
+    for(i=1;i<=lena;i++)  
+    {  
+        for(j=1;j<=lenb;j++)  
+        {  
+            inserts=dp[i][j-1]+1;//插入  
+            deletes=dp[i-1][j]+1;//删除  
+            replaces;//替换  
+            if(s[i-1]==s1[j-1])  
+            {  
+                replaces=dp[i-1][j-1];  
+            }  
+            else  
+            {  
+                replaces=dp[i-1][j-1]+1;  
+            }  
+            dp[i][j]=min(min(inserts,deletes),replaces);  
+        }  
+    }  
+    cout<<dp[lena][lenb]<<endl;  
+}  
+int main()  
+{  
+    int la,lb;  
+    while(cin>>a>>b)  
+    {  
+          la=strlen(a);  
+          lb=strlen(b);  
+           match(a,b,la,lb);  
+    }  
+    return 0;  
+}  
