@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 /*because atol function doesn't work, so we use 2 atoi to combile long type*/
