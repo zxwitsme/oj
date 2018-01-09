@@ -17,4 +17,5 @@
 40. string shortest edit distance(use dynamic programming)
 42. Minimum Coin Change Problem(Using Bottom-Up Dynamic Programming)
 45. Dynamic Programming
-46, simple
+46. simple
+48. simple
