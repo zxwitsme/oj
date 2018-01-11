@@ -20,4 +20,4 @@
 46. simple
 48. simple
 49. Minimum Spanning Tree(Using Kruskal algorithm)
-
+50. shudu game
