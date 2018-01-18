@@ -4,13 +4,14 @@
 
 void solution(char *line)
 {
-	int e[1024],f[1024][8192];
+	short e[1024],f[1024][1024], f1[1024][1024];
 	int count = 0;
 	int a, n = 0;
 	int i, j, k;
 
-	memset(e, 0, 1024); 
-	memset(f, 0, sizeof(f)); 
+	memset(e, 0, sizeof(e)); 
+	memset(f, 0, sizeof(f));
+	memset(f1, 0, sizeof(f1));
 	while (1) {
 		a = atoi(line);
 		e[n++] = a;
@@ -24,13 +25,15 @@ void solution(char *line)
 	for (i = 0; i < n; i++) {
 		count += i+1;
 		for (j = i-1; j >= 0; j--) {
-			k = e[i]-e[j];
-			if (k >= 8192) {
-				printf("k so big: %d\n", k);
-				return;
+			if (e[i] - e[j] >= 0) {
+				k = e[i] - e[j];
+				count += f[j][k];
+				f[i][k] += f[j][k] + 1;
+			} else {
+				k = e[j] - e[i];
+				count += f1[j][k];
+				f1[i][k] += f1[j][k] + 1;
 			}
-			count += f[j][k];
-			f[i][k] +=f[j][k]+1;
 		}
 	}
 

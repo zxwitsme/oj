@@ -1,10 +1,10 @@
-
 3. big number substraction
 4. hash table
 12. recursion
 16. calculation
 17. convert to chinese number
 19. big number addition
+20. Dynamic Programming
 21. stack
 22,23. arithmetic progression & geometric progression
 24. recursion
