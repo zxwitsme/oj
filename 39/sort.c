@@ -4,15 +4,18 @@
  
 void solution(char *line)
 {
-	int i, a = 0, b = 0, c = 0;
+	int i = 0, a = 0, b = 0, c = 0;
 
-	for (i = 0; i < strlen(line); i++) {
+	while(line[i] != '\0') {
 		if (line[i] == 'a')
 			a++;
 		else if (line[i] == 'b')
 			b++;
 		else if (line[i] == 'c')
 			c++;
+		else
+			break;
+		i++;
 	}
 
 	for (i = 0; i < a; i++)
@@ -27,20 +30,8 @@ void solution(char *line)
 int main()
 {
 	char line[102400];
-#if 1
-	int n = 0;
-  
-	for (n = 0; n < 5120; n++)
-		line[n] = 'c';
-	for (n = 5120; n < 10240; n++)
-		line[n] = 'b';
-	for (n = 10240; n < 10240+5120; n++)
-		line[n] = 'a';
-	line[n] = '\n';
-#else
-	scanf("%s", line);
-#endif
 
+	scanf("%s", line);
 	solution(line);
  
 	return 0;

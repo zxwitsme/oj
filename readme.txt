@@ -14,6 +14,7 @@
 32,33. permutation
 35: banker algorithm (avoid deadlock)
 36: dijkstra shortest path
+39: simple
 40. string shortest edit distance(use dynamic programming)
 42. Minimum Coin Change Problem(Using Bottom-Up Dynamic Programming)
 45. Dynamic Programming
