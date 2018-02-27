@@ -33,6 +33,8 @@
 59. simple
 60: same as 36
 61: guoqiao problem
+*62:
+63: Joseph problem (linked list)
 
 
 the items with * are not finished
