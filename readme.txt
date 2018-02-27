@@ -35,6 +35,7 @@
 61: guoqiao problem
 *62:
 63: Joseph problem (linked list)
+64: simple
 
 
 the items with * are not finished
