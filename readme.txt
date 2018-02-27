@@ -21,7 +21,7 @@
 45. Dynamic Programming
 46. simple
 48. simple
-49. Minimum Spanning Tree(Using Kruskal algorithm)
+49. Minimum Spanning Tree(Using Kruskal algorithm + 并查集)
 50. shudu game
 51. BFS/DFS for graph search
 52. BFS: Breadth First Search
