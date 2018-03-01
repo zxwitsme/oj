@@ -38,6 +38,7 @@
 64: simple
 65. Dynamic Programming
 66. funny numbers
+68. simple
 
 
 the items with * are not finished
