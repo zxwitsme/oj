@@ -37,6 +37,7 @@
 63: Joseph problem (linked list)
 64: simple
 65. Dynamic Programming
+66. funny numbers
 
 
 the items with * are not finished
