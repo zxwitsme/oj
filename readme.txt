@@ -38,6 +38,7 @@
 64: simple
 65. Dynamic Programming
 66. funny numbers
+67. permulation, output in order (similar as 32, 33)
 68. simple
 
 
