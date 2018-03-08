@@ -40,6 +40,7 @@
 66. funny numbers
 67. permulation, output in order (similar as 32, 33)
 68. simple
+76. hash table & somorphic Strings 同构字符串
 
 
 the items with * are not finished
