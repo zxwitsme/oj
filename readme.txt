@@ -1,6 +1,6 @@
 3. big number substraction
 4. hash table
-*12. recursion
+12. stack
 16. calculation
 17. convert to chinese number
 19. big number addition
