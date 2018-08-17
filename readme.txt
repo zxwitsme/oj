@@ -40,6 +40,7 @@
 66. funny numbers
 67. permulation, output in order (similar as 32, 33)
 68. simple
+72. funny number question
 76. hash table & somorphic Strings 同构字符串
 
 
