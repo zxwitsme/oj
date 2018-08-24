@@ -42,6 +42,6 @@
 68. simple
 72. funny number question
 76. hash table & somorphic Strings 同构字符串
-
+79. Dynamic Programming
 
 the items with * are not finished
